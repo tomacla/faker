@@ -6,10 +6,6 @@ import org.junit.Test;
 
 public class FakerTest {
 
-    @Test
-    public void strings() {
-        Assert.assertNotNull(Faker.strings());
-    }
 
     @Test
     public void doubles() {
@@ -19,6 +15,31 @@ public class FakerTest {
     @Test
     public void integers() {
         Assert.assertNotNull(Faker.integers());
+    }
+
+    @Test
+    public void url() {
+        Assert.assertNotNull(Faker.url());
+    }
+
+    @Test
+    public void simpleString() {
+        Assert.assertNotNull(Faker.simpleString());
+    }
+
+    @Test
+    public void phoneNumber() {
+        Assert.assertNotNull(Faker.phoneNumber());
+    }
+
+    @Test
+    public void email() {
+        Assert.assertNotNull(Faker.email());
+    }
+
+    @Test
+    public void text() {
+        Assert.assertNotNull(Faker.text());
     }
 
 }
